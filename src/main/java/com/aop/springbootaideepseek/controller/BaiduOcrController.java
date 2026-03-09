@@ -1,6 +1,6 @@
 package com.aop.springbootaideepseek.controller;
 
-import com.aop.springbootaideepseek.service.BaiduOcrService;
+import com.aop.springbootaideepseek.service.BaiduOcrSdkService;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.http.HttpStatus;
@@ -16,10 +16,10 @@ import java.util.Map;
 @RequestMapping("/ocr")
 public class BaiduOcrController {
 
-    private final BaiduOcrService ocrService;
+    private final BaiduOcrSdkService ocrService;
     private final ObjectMapper objectMapper;
 
-    public BaiduOcrController(BaiduOcrService ocrService, ObjectMapper objectMapper) {
+    public BaiduOcrController(BaiduOcrSdkService ocrService, ObjectMapper objectMapper) {
         this.ocrService = ocrService;
         this.objectMapper = objectMapper;
     }

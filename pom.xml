@@ -13,6 +13,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring-boot.version>3.4.2</spring-boot.version>
         <spring-ai.version>1.0.0-M6</spring-ai.version>
+        <baidu.sdk.version>4.16.11</baidu.sdk.version>
     </properties>
     <dependencies>
         <dependency>
@@ -39,6 +40,11 @@
         <dependency>
             <groupId>org.springframework.ai</groupId>
             <artifactId>spring-ai-spring-boot-autoconfigure</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.baidu.aip</groupId>
+            <artifactId>java-sdk</artifactId>
+            <version>${baidu.sdk.version}</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
